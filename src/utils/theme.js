@@ -4,7 +4,7 @@ export const themeDark = createTheme({
   palette: {
     modeCustomed: {
       text: 'white',
-      background: 'black',
+      background: '#0f0f0f',
       cardContext: '#1e1e1e',
     },
   },

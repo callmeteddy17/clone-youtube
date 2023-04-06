@@ -25,6 +25,7 @@ function SearchBar() {
         mr: { sm: 5 },
       }}>
       <input
+        style={{ width: '15vw' }}
         className="search-bar"
         placeholder="Search..."
         value={search}

@@ -35,7 +35,7 @@ function Feed() {
         <Typography
           className="copyright"
           variant="body2"
-          sx={{ ml: 2.5, mt: 1.5, color: 'modeCustomed.text' }}>
+          sx={{ ml: { sx: '2.5px' }, mt: 1.5, color: 'modeCustomed.text' }}>
           Copyright 2023 by Teddy
         </Typography>
       </Box>

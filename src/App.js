@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { Box, ThemeProvider } from '@mui/material';
 import { themeDark, themeLight } from './utils/theme';
@@ -11,12 +11,16 @@ import {
 } from './components';
 
 function App() {
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState(false);
 
   return (
     <ThemeProvider theme={theme === true ? themeDark : themeLight}>
       <BrowserRouter>
-        <Box sx={{ backgroundColor: 'modeCustomed.background' }}>
+        <Box
+          sx={{
+            backgroundColor: 'modeCustomed.background',
+            position: 'relative',
+          }}>
           <Navbar setTheme={setTheme} theme={theme} />
           <Routes>
             <Route path="/" exact element={<Feed />} />

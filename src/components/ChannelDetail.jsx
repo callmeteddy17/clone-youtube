@@ -40,7 +40,7 @@ function ChannelDetail() {
         <ChannelCard channelDetail={channelDetail} marginTop="-93px" />
       </Box>
       <Box display={'flex'} p="2">
-        <Box sx={{ mr: { sm: '100px' } }} />
+        <Box sx={{ mr: { sm: '15px', md: '25px' }, ml: { xs: '15px' } }} />
         <Video videos={videos} />
       </Box>
     </Box>

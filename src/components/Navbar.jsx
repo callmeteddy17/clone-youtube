@@ -13,14 +13,16 @@ function Navbar(props) {
       p={2}
       sx={{
         position: 'sticky',
-        backgroundColor: 'modeCustomed.background ',
+        backgroundColor: 'modeCustomed.background',
         top: 0,
         justifyContent: 'space-between',
+        zIndex: 10,
       }}>
       <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
         <img src={logo} alt="logo" height={45} />
       </Link>
 
+      <SearchBar />
       <div style={{ display: 'flex' }}>
         <div
           onClick={() => props.setTheme(!props.theme)}
@@ -39,7 +41,6 @@ function Navbar(props) {
           }>
           {props.theme === true ? '🌙' : '🌞'}
         </div>
-        <SearchBar />
       </div>
     </Stack>
   );
